@@ -8,14 +8,12 @@ import ChildComponent from "./child";
 
 
 function Header(){
-    return(
+    return(//menna wenasak
         <div className="header">
             <h1>Welcome To Our web Page</h1>
             <NavBar/>
             <ChildComponent/>
-            {/* <Parent>
-            <ChildComponent/>
-            </Parent> */}
+            
             
 
         </div>
