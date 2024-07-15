@@ -1,0 +1,23 @@
+/* NavBar.css */
+
+.NavBar {
+  display: flex;
+  justify-content: right; /* Align the links to the right */
+  gap: 50px; /* Space between the links */
+  margin-top: 100px; /* Add some margin to the top for spacing */
+  max-width: 1200px; /* Reasonable max width */
+  margin: 0 auto;
+  background-color: inherit; /* Ensure the background is inherited from the theme */
+}
+
+.NavBar-link {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Ensure the link color is inherited from the theme */
+  font-size: 18px; /* Font size for links */
+  font-weight: bold;
+  display: flex;
+}
+
+.NavBar-link:hover {
+  color: blue; /* Change color on hover */
+}

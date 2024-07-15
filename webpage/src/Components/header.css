@@ -1,0 +1,12 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 98%;
+    font-family: Outfit;
+    padding: 10px 12px;
+    overflow: hidden;
+    padding-bottom: 40px;
+    background-color: inherit;
+    background-color: gray;
+}
