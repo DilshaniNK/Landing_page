@@ -1,23 +1,86 @@
-/* NavBar.css */
+/* Base styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
 .NavBar {
+  top: 0;
+  position: fixed;
+  width: 98%;
   display: flex;
-  justify-content: right; /* Align the links to the right */
-  gap: 50px; /* Space between the links */
-  margin-top: 100px; /* Add some margin to the top for spacing */
-  max-width: 1200px; /* Reasonable max width */
-  margin: 0 auto;
-  background-color: inherit; /* Ensure the background is inherited from the theme */
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  
+  
+
+}
+
+.NavBar h2 {
+  margin: 0;
+  font-size: 24px;
 }
 
 .NavBar-link {
-  text-decoration: none; /* Remove underline from links */
-  color: inherit; /* Ensure the link color is inherited from the theme */
-  font-size: 18px; /* Font size for links */
-  font-weight: bold;
+  color: inherit;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
   display: flex;
+  align-items: center;
+  transition: color 0.3s;
 }
 
 .NavBar-link:hover {
-  color: blue; /* Change color on hover */
+  color: #007BFF;
+}
+
+.NavBar-link .MuiSvgIcon-root {
+  margin-right: 8px;
+}
+
+.NavBar .NavBar-right {
+  display: flex;
+  align-items: center;
+}
+
+/* ChildComponent and Clock styles */
+.ChildComponent, .Clock {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+}
+
+.Clock {
+  margin-right: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .NavBar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .NavBar-link {
+    margin: 10px 0;
+  }
+
+  .NavBar .NavBar-right {
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ChildComponent, .Clock {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
